@@ -4,7 +4,7 @@
 
 # Run Mentor's small language model locally
 
-[Product overview](README.md) · [App configuration](README-CONFIG.md) · **Local SLM setup**
+[Product overview](README.md) · [App configuration](README-CONFIG.md) · **Local SLM setup** · [LinkedIn carousel](README-SLIDE.md)
 
 Mentor uses **Gemma 4 E2B**, an instruction-tuned language model, through **llama.cpp** on this Mac. It powers conversations, personalized scenarios, Explore lessons, improved English, and feedback. Speech recognition and voice playback use separate local models.
 
@@ -287,5 +287,6 @@ These check types, automated behavior, and the production build. They do not rep
 
 - [README.md — product pitch, screenshots, interaction flows, and stack](README.md)
 - [README-CONFIG.md — learning focus, voice engines, model status, and privacy](README-CONFIG.md)
+- [README-SLIDE.md — ten carousel images and feature explanations](README-SLIDE.md)
 - [Local models — detailed runtime options, speech configuration, and validation records](docs/local-models.md)
 - [Database guide — local Supabase and learning-data persistence](supabase/README.md)

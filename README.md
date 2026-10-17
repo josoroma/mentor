@@ -13,7 +13,7 @@
   <strong>Voice first · Personalized practice · Local AI · Interactive learning</strong>
 </p>
 
-**Product overview** · [App configuration](README-CONFIG.md) · [Local SLM setup](README-SLM.md)
+**Product overview** · [App configuration](README-CONFIG.md) · [Local SLM setup](README-SLM.md) · [LinkedIn carousel](README-SLIDE.md)
 
 ## Table of contents
 
@@ -191,6 +191,7 @@ Real voice checks need the local services; see [SLM installation tests](README-S
 | --- | --- |
 | [Configuration guide](README-CONFIG.md) | Settings screenshots, learning focus, voice engines, model status, privacy, and connection checks |
 | [Local SLM setup](README-SLM.md) | Exact Gemma download, checksum, llama.cpp installation, local configuration, and real-service test commands |
+| [LinkedIn carousel](README-SLIDE.md) | Ten branded slides with concise explanations of Mentor's core features |
 | [Product guide](docs/product-guide.md) | Detailed interaction behavior, voice engines, learning paths, Explore, backup, restore, and reset |
 | [Local models](docs/local-models.md) | Installation, runtime selection, service checks, latency, and troubleshooting |
 | [Database guide](supabase/README.md) | Local Supabase, ownership, row-level security, synchronization, and Explore persistence |

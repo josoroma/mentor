@@ -4,7 +4,7 @@
 
 # Configure your private practice studio
 
-[Product overview](README.md) · **App configuration** · [Local SLM setup](README-SLM.md)
+[Product overview](README.md) · **App configuration** · [Local SLM setup](README-SLM.md) · [LinkedIn carousel](README-SLIDE.md)
 
 Set what you want to learn, choose the voice you hear, and check the local services behind Mentor. This guide follows the four Settings screenshots below. Model names, available voices, and connection status reflect the setup shown; your installation may report different values.
 
@@ -129,6 +129,7 @@ First-time recognition and default voice installation uses `npm run speech:setup
 
 - [README.md — product pitch, screenshots, architecture, and installation](README.md)
 - [README-SLM.md — model download, runtime installation, configuration, and tests](README-SLM.md)
+- [README-SLIDE.md — ten carousel images and feature explanations](README-SLIDE.md)
 - [Product guide — complete interaction and data-management behavior](docs/product-guide.md)
 - [Local models — speech engines, coach runtimes, and troubleshooting](docs/local-models.md)
 - [Database guide — local Supabase, hosted opt-in, and Explore storage](supabase/README.md)
