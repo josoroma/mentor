@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.local/
+test-results/
+playwright-report/
+supabase/.temp/
+supabase/.branches/

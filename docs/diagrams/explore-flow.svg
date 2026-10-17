@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="675" viewBox="0 0 1000 675" role="img" aria-labelledby="title desc">
+  <title id="title">Explore: turn a question into an interactive lesson</title>
+  <desc id="desc">Speak or type a topic. The local coach offers three prompt refinements. Choose one to create a lesson, then inspect it, discuss it, and practice your own wording. Follow-up answers discuss the existing lesson without automatically rewriting it. The learning database saves the conversation, lesson, practice wording, and interaction state.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="m2 1 4 4-4 4" fill="none" stroke="#1447e6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.8px; fill: #1447e6; }
+    .heading { font-size: 28px; font-weight: 700; letter-spacing: -.7px; fill: #171717; }
+    .label { font-size: 19px; font-weight: 700; letter-spacing: -.35px; fill: #171717; }
+    .body { font-size: 14px; fill: #666; }
+    .card { fill: #fff; stroke: #e5e5e5; }
+    .connector { fill: none; stroke: #1447e6; stroke-width: 1.8; marker-end: url(#arrow); }
+  </style>
+  <rect x=".5" y=".5" width="999" height="674" rx="20" fill="#fafafa" stroke="#e5e5e5"/>
+  <text x="32" y="35" class="eyebrow">THE EXPLORE FLOW</text>
+  <text x="32" y="75" class="heading">Learn the idea. Practice how to explain it.</text>
+  <text x="32" y="102" class="body">A question becomes something you can inspect, discuss, and make your own.</text>
+
+  <rect x="32" y="132" width="296" height="184" rx="14" class="card"/>
+  <text x="52" y="162" class="eyebrow">01 · ASK</text>
+  <text x="52" y="196" class="label">Speak or type a topic</text>
+  <text x="52" y="223" class="body">Start from your own question</text>
+  <text x="52" y="244" class="body">or an idea for your learning focus.</text>
+  <rect x="52" y="266" width="256" height="30" rx="7" fill="#f4efff"/>
+  <g transform="translate(63 271)" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round">
+    <rect x="5" y="1" width="6" height="11" rx="3"/>
+    <path d="M2 9v1a6 6 0 0 0 12 0V9M8 16v3M5 19h6"/>
+  </g>
+  <text x="89" y="286" font-size="12" fill="#7c3aed">Your words set the direction</text>
+
+  <path d="M332 224h18" class="connector"/>
+  <rect x="356" y="132" width="288" height="184" rx="14" class="card"/>
+  <text x="376" y="162" class="eyebrow">02 · REFINE</text>
+  <text x="376" y="196" class="label">Three clearer prompts</text>
+  <g fill="#f7f7f7" stroke="#ededed">
+    <rect x="376" y="214" width="248" height="23" rx="5"/>
+    <rect x="376" y="243" width="248" height="23" rx="5"/>
+    <rect x="376" y="272" width="248" height="23" rx="5"/>
+  </g>
+  <g fill="#666" font-size="11">
+    <text x="388" y="230">01</text><text x="388" y="259">02</text><text x="388" y="288">03</text>
+  </g>
+  <g stroke="#d6d6d6" stroke-width="3" stroke-linecap="round">
+    <path d="M416 226h137M416 255h178M416 284h157"/>
+  </g>
+
+  <path d="M648 224h18" class="connector"/>
+  <rect x="672" y="132" width="296" height="184" rx="14" fill="#eef3ff" stroke="#cdd9fc"/>
+  <text x="692" y="162" class="eyebrow">03 · CHOOSE</text>
+  <text x="692" y="196" class="label">You decide the prompt</text>
+  <text x="692" y="223" class="body">Pick the direction that fits.</text>
+  <text x="692" y="244" class="body">The local coach builds the lesson.</text>
+  <rect x="692" y="266" width="256" height="30" rx="7" fill="#1447e6"/>
+  <text x="820" y="286" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Explore with this prompt →</text>
+
+  <path d="M820 322v28" class="connector"/>
+  <rect x="32" y="360" width="936" height="225" rx="14" class="card"/>
+  <text x="52" y="390" class="eyebrow">04 · LEARN THROUGH INTERACTION</text>
+  <text x="52" y="423" class="label">One lesson, a conversation, and room to practice.</text>
+  <line x1="350" y1="450" x2="350" y2="562" stroke="#e5e5e5"/>
+  <line x1="659" y1="450" x2="659" y2="562" stroke="#e5e5e5"/>
+  <text x="52" y="471" font-size="16" font-weight="700" fill="#1447e6">Inspect the idea</text>
+  <text x="52" y="499" class="body">Diagrams, simulations,</text>
+  <text x="52" y="520" class="body">walkthroughs, and examples.</text>
+  <text x="52" y="550" font-size="12" fill="#777">Zoom · step · play · adjust</text>
+  <text x="374" y="471" font-size="16" font-weight="700" fill="#1447e6">Keep asking questions</text>
+  <text x="374" y="499" class="body">Follow-ups discuss this lesson.</text>
+  <text x="374" y="520" class="body">Its artifact stays intact.</text>
+  <text x="374" y="550" font-size="12" fill="#777">New starts a separate exploration</text>
+  <text x="683" y="471" font-size="16" font-weight="700" fill="#7c3aed">Practice your version</text>
+  <text x="683" y="499" class="body">Write your own response.</text>
+  <text x="683" y="520" class="body">Keep original + improved English.</text>
+  <text x="683" y="550" font-size="12" fill="#7c3aed">Play the clearer wording aloud</text>
+
+  <rect x="32" y="609" width="936" height="40" rx="9" fill="#eef3ff"/>
+  <path d="m49 629 5 5 10-10" fill="none" stroke="#1447e6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="634" font-size="13" fill="#1447e6">Saved to the learning database: conversation, lesson, revisions, practice wording, and interaction state.</text>
+</svg>

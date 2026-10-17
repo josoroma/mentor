@@ -1,0 +1,106 @@
+.section {
+  padding: 22px 0 4px;
+}
+
+.section h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section h3 svg {
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.intro {
+  margin: 10px 0 16px;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.card {
+  padding: 16px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.identity {
+  min-width: 0;
+  flex: 1;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--brand);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.identity strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.identity p,
+.detail {
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.65;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+}
+
+.capabilities {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.capabilities dt {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.capabilities dd {
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.detail {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 420px) {
+  .heading {
+    flex-wrap: wrap;
+  }
+
+  .identity {
+    flex-basis: 100%;
+  }
+
+  .heading > span {
+    margin-left: 0;
+  }
+}

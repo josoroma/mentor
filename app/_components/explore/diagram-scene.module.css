@@ -1,0 +1,83 @@
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 35%, #202630 0%, #111418 72%);
+}
+
+.canvasHost {
+  position: absolute;
+  inset: 0;
+}
+
+.canvasHost canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+  cursor: grab;
+}
+
+.canvasHost canvas:active {
+  cursor: grabbing;
+}
+
+.canvasHost canvas:focus-visible {
+  outline: 2px solid #75aaff;
+  outline-offset: -4px;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: min(180px, 42%);
+  padding: 5px 9px;
+  overflow: hidden;
+  border: 1px solid #485362;
+  border-radius: 5px;
+  background: #161c24f2;
+  color: #d9dfe8;
+  font:
+    500 11px/1.4 var(--font-geist, ui-sans-serif),
+    sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: auto;
+  cursor: pointer;
+  box-shadow: 0 3px 10px #0003;
+  visibility: hidden;
+}
+
+.label[data-selected='true'] {
+  border-color: #75aaff;
+  background: #1e334e;
+  color: #f1f6ff;
+  z-index: 2;
+}
+
+.label:focus-visible {
+  outline: 2px solid #c2d9ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .scene {
+    min-height: 320px;
+  }
+
+  .label {
+    max-width: 128px;
+    font-size: 10px;
+  }
+}

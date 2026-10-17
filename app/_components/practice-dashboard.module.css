@@ -1,0 +1,197 @@
+.heading {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.heading .focus {
+  color: var(--brand);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.actions > span {
+  padding-top: 0;
+}
+
+.filters {
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.savedFilter {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bookmarkError {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 18px;
+  margin: 0 0 20px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.bookmarkError p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.bookmarkError button {
+  flex-shrink: 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 22px;
+}
+
+.pagination p,
+.pagination span {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.pagination > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pending {
+  margin-top: 22px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 20px 0;
+}
+
+.status svg {
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 238px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.skeleton > span {
+  display: block;
+  min-height: 9px;
+  width: 90%;
+  border-radius: 4px;
+  background: var(--accent);
+  animation: breathe 1.8s ease-in-out infinite alternate;
+}
+
+.skeleton > .skeletonIcon {
+  height: 37px;
+  width: 37px;
+  border-radius: 9px;
+  background: var(--brand-soft);
+}
+
+.skeleton > .skeletonTitle {
+  height: 19px;
+  width: 72%;
+  margin-top: 12px;
+}
+
+.skeleton > .skeletonFooter {
+  width: 46%;
+  margin-top: auto;
+}
+
+.error {
+  margin-top: 22px;
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--card);
+}
+
+.error h3 {
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.error p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 10px 0 18px;
+}
+
+@keyframes breathe {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading,
+  .actions {
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .bookmarkError {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pagination > div {
+    width: 100%;
+    justify-content: space-between;
+    gap: 7px;
+  }
+
+  .pagination span {
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton > span {
+    animation: none;
+  }
+}

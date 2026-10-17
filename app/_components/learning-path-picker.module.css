@@ -1,0 +1,114 @@
+.card {
+  padding: 23px 26px;
+  margin-bottom: 23px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  min-width: 0;
+}
+.heading > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--brand);
+  font-size: 9px;
+  font-weight: 550;
+  letter-spacing: 1.3px;
+}
+.heading h2 {
+  margin: 9px 0 6px;
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+}
+.heading p,
+.hint,
+.pending {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.heading p {
+  margin: 0;
+}
+.controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  margin-top: 19px;
+  min-width: 0;
+}
+.field {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+.field > span {
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 550;
+}
+.select {
+  position: relative;
+  min-width: 0;
+}
+.select select {
+  appearance: none;
+  width: 100%;
+  min-width: 0;
+  min-height: 43px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--background);
+  color: var(--foreground);
+  padding: 10px 34px 10px 12px;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+.select select:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+.select svg {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.start {
+  min-height: 43px;
+  flex-shrink: 0;
+}
+.hint {
+  margin: 11px 0 0;
+}
+.pending {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 15px 0 0;
+}
+@media (max-width: 1100px) {
+  .controls {
+    flex-wrap: wrap;
+  }
+  .field {
+    flex-basis: calc(50% - 14px);
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .start {
+    margin-top: 4px;
+  }
+}

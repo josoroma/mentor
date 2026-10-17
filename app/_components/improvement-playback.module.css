@@ -1,0 +1,21 @@
+.control {
+  margin-top: 9px;
+  min-width: 0;
+}
+
+.liveControl {
+  margin-top: 9px;
+  min-width: 0;
+}
+
+.pauseHint {
+  margin-top: 7px;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.rewrite {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

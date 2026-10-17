@@ -1,0 +1,65 @@
+.form {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+.form h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.form h3 svg {
+  color: var(--brand);
+}
+.description {
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 9px 0 16px;
+}
+.fields {
+  border: 0;
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+.fields label {
+  display: grid;
+  gap: 7px;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+.fields select {
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--background);
+  color: var(--foreground);
+  padding: 10px;
+  min-height: 42px;
+  width: 100%;
+  min-width: 0;
+  font-size: 12px;
+}
+.fields select:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+.saved {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 14px 0;
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.saved svg,
+.saved span {
+  color: var(--brand);
+}
+.form > button {
+  width: 100%;
+}

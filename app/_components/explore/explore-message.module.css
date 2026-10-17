@@ -1,0 +1,130 @@
+.message {
+  padding: 0 0 22px;
+}
+
+.message header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+
+.message header small {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.message p {
+  font-size: 12px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.userMessage {
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 14px;
+  background: var(--background);
+}
+
+.userMessage header {
+  color: var(--text-secondary);
+}
+
+.original {
+  margin: 0;
+}
+
+.improvement {
+  border-top: 1px solid var(--border);
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+.improvementHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 550;
+  color: var(--brand);
+  margin-bottom: 7px;
+}
+
+.improvementLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rewrite {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.message .status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.status svg {
+  flex-shrink: 0;
+}
+
+.failure p {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0 0 7px;
+}
+
+.failure button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 4px 7px;
+  background: var(--secondary);
+  color: var(--text-secondary);
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.failure button:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.failure button:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

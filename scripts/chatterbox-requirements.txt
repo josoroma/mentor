@@ -1,0 +1,7 @@
+# Official Chatterbox source with Multilingual V3 support. Keep model revisions
+# in setup-chatterbox.py aligned with this reviewed loader.
+chatterbox-tts @ git+https://github.com/resemble-ai/chatterbox.git@5de7a54aa4e5e2baadb0182dde554908b48b85c2
+s3tokenizer==0.3.0
+spacy-pkuseg==1.0.1
+# This separate environment also runs Mentor's existing recognition/API service.
+-r speech-requirements.txt

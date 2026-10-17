@@ -1,0 +1,93 @@
+.practice {
+  min-width: 0;
+}
+
+.improvement {
+  margin: 0.9rem 0 0.2rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  min-width: 0;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  color: var(--brand);
+  font-size: 0.75rem;
+  font-weight: 550;
+}
+
+.headingLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.improvement p {
+  margin: 0.55rem 0 0;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.rewrite {
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+}
+
+.status svg {
+  flex-shrink: 0;
+}
+
+.failure p {
+  color: var(--text-muted);
+}
+
+.failure button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.55rem;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.failure button:hover:not(:disabled) {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.failure button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.spinner {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}

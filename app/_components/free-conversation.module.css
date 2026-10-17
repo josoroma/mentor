@@ -1,0 +1,494 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+  padding: 26px 30px;
+  border: 1px solid var(--brand-border);
+  border-radius: 14px;
+  background: linear-gradient(110deg, var(--brand-soft), var(--card) 80%);
+}
+
+.cardIcon {
+  position: relative;
+  display: grid;
+  flex-shrink: 0;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border: 1px solid var(--brand-border);
+  border-radius: 20px;
+  color: var(--brand);
+  background: var(--card);
+}
+
+.cardIcon > svg + svg {
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+  background: var(--card);
+}
+.cardCopy {
+  flex: 1;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--brand);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 1.4px;
+}
+.cardCopy h2 {
+  margin: 7px 0;
+  font-size: 22px;
+  font-weight: 550;
+  letter-spacing: -0.6px;
+}
+.cardCopy p {
+  max-width: 580px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.cardNote {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 11px;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+.card > button {
+  flex-shrink: 0;
+}
+.modal {
+  width: min(680px, calc(100vw - 32px));
+}
+.personalization {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 22px 0;
+}
+.personalization span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 9px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+.personalization span:first-child {
+  color: var(--brand);
+  background: var(--brand-soft);
+  border-color: var(--brand-border);
+}
+.voiceSetup {
+  min-width: 0;
+}
+.voiceVisuals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  padding: 2px 0 14px;
+}
+.voiceParticipant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.voiceParticipant :global(.orb-scene) {
+  width: 146px;
+  height: 146px;
+}
+.voiceParticipant :global(.voice-orb) {
+  width: 82px;
+  height: 82px;
+}
+.voiceParticipant :global(.orb-orbit) {
+  width: 110px;
+  height: 110px;
+}
+.voiceParticipant :global(.orbit-two) {
+  width: 128px;
+  height: 128px;
+}
+.voiceParticipant :global(.orbit-three) {
+  width: 148px;
+  height: 148px;
+}
+.voiceParticipant :global(.orb-ripple) {
+  width: 103px;
+  height: 103px;
+}
+.voiceParticipant :global(.orb-halo) {
+  width: 140px;
+  height: 140px;
+}
+.voiceParticipant > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+.voiceParticipant > span > span {
+  color: var(--text-muted);
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+.voiceLink {
+  flex-shrink: 0;
+  width: 28px;
+  height: 1px;
+  margin-top: -15px;
+  background: linear-gradient(90deg, var(--brand), var(--user-accent));
+  opacity: 0.6;
+}
+.voiceStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 24px;
+  margin: 6px 0 19px;
+  color: var(--brand);
+  font-size: 12px;
+  text-align: center;
+}
+.voiceStatus svg {
+  flex-shrink: 0;
+}
+.spokenPrompt,
+.heardTopic {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--background);
+}
+.spokenPrompt {
+  border-color: var(--brand-border);
+  background: var(--brand-soft);
+}
+.spokenPrompt > span,
+.heardTopic > span {
+  color: var(--brand);
+  font-size: 10px;
+  font-weight: 600;
+}
+.spokenPrompt p,
+.heardTopic p {
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.heardTopic {
+  min-height: 81px;
+  margin-top: 10px;
+}
+.heardTopic > span {
+  color: var(--user-accent);
+}
+.placeholder {
+  color: var(--text-muted);
+}
+.voiceControls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.voiceHint {
+  max-width: 410px;
+  margin: 12px auto 18px;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+.planning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 20px;
+  color: var(--brand);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.planning svg {
+  flex-shrink: 0;
+}
+.errorActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.changeTopic {
+  display: flex;
+  margin: 0 auto;
+}
+.duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 17px 0;
+  border-top: 1px solid var(--border);
+}
+.duration label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.duration select {
+  padding: 7px 9px;
+  border: 1px solid var(--input);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 12px;
+}
+.error {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid var(--destructive-border);
+  border-radius: 8px;
+  color: var(--destructive-text);
+  background: var(--destructive-soft);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: 10px;
+  line-height: 1.7;
+  text-align: center;
+}
+.privacy svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.refinedTopic {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--brand-border);
+  background: var(--brand-soft);
+}
+.refinedTopic h3 {
+  margin: 12px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  overflow-wrap: anywhere;
+}
+.refinedTopic p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.refinedTopic p span {
+  color: var(--text-muted);
+}
+.planIntro {
+  margin: 24px 0 17px;
+}
+.planIntro h3 {
+  font-size: 15px;
+  font-weight: 550;
+}
+.planIntro p {
+  margin-top: 5px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.stages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.stages li {
+  display: flex;
+  gap: 13px;
+  padding: 0 0 20px;
+}
+.step {
+  display: grid;
+  place-items: center;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  border: 1px solid var(--brand-border);
+  border-radius: 50%;
+  color: var(--brand);
+  font-size: 10px;
+}
+.stages h4 {
+  margin: 4px 0 5px;
+  font-size: 13px;
+  font-weight: 550;
+}
+.stages p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.phrases {
+  padding: 15px 0;
+  border-top: 1px solid var(--border);
+}
+.phrases h4 {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+.phrases > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.phrases span {
+  padding: 6px 9px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+}
+.savedPlan {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid var(--brand-border);
+  border-radius: 10px;
+  background: var(--brand-soft);
+  font-size: 12px;
+}
+.savedPlan summary {
+  cursor: pointer;
+  color: var(--brand);
+  font-weight: 550;
+}
+.savedPlan > p {
+  margin: 12px 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.savedPlan ol {
+  padding-left: 18px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+.savedPlan li {
+  margin: 8px 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-wrap: wrap;
+    gap: 17px;
+    padding: 22px;
+  }
+  .cardCopy {
+    flex-basis: calc(100% - 90px);
+  }
+  .card > button {
+    margin-left: 79px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 20px;
+    gap: 14px;
+  }
+  .cardIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+  }
+  .cardCopy {
+    flex-basis: calc(100% - 65px);
+  }
+  .cardCopy h2 {
+    font-size: 20px;
+  }
+  .cardCopy p {
+    font-size: 12px;
+  }
+  .cardNote {
+    display: none;
+  }
+  .card > button {
+    width: 100%;
+    margin: 0;
+  }
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.9px;
+  }
+  .voiceVisuals {
+    gap: 8px;
+    padding-top: 0;
+  }
+  .voiceLink {
+    width: 14px;
+  }
+  .voiceParticipant :global(.orb-scene) {
+    width: 113px;
+    height: 122px;
+    transform: scale(0.8);
+    margin: -9px -4px;
+  }
+  .voiceParticipant > span {
+    flex-direction: column;
+    gap: 3px;
+    font-size: 12px;
+  }
+  .voiceStatus {
+    margin-bottom: 15px;
+  }
+  .voiceControls {
+    gap: 5px;
+  }
+  .duration {
+    flex-wrap: wrap;
+  }
+  .actions {
+    flex-wrap: wrap-reverse;
+  }
+  .actions > button {
+    width: 100%;
+  }
+  .refinedTopic {
+    padding: 16px;
+  }
+  .refinedTopic h3 {
+    font-size: 18px;
+  }
+}

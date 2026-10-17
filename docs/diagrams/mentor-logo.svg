@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="338" height="96" viewBox="0 0 338 96" role="img" aria-labelledby="title desc">
+  <title id="title">mentor.</title>
+  <desc id="desc">Mentor's electric blue audio waveform beside its lowercase wordmark.</desc>
+  <rect width="338" height="96" rx="16" fill="#fff"/>
+  <g transform="translate(20 19) scale(2.4)" fill="none" stroke="#1447e6" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M2 10v3M6 6v11M10 3v18M14 8v7M18 5v13M22 10v3"/>
+  </g>
+  <text x="91" y="68" fill="#171717" font-family="Arial, Helvetica, sans-serif" font-size="63" font-weight="700" letter-spacing="-3.2">mentor<tspan fill="#1447e6">.</tspan></text>
+</svg>

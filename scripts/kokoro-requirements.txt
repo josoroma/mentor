@@ -1,0 +1,7 @@
+# CPU ONNX model + packaged local eSpeak phonemization. NumPy stays compatible
+# with the shared Chatterbox environment; no kokoro-onnx NumPy 2 override.
+onnxruntime==1.31.0
+phonemizer==3.4.0
+espeakng-loader==0.2.4
+numpy==1.26.4
+-r speech-requirements.txt

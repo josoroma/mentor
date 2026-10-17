@@ -1,0 +1,125 @@
+.root {
+  container-type: inline-size;
+  min-width: 0;
+}
+.heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.heading > svg {
+  color: var(--brand);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.heading h2 {
+  font-size: 17px;
+  font-weight: 550;
+  margin: 0;
+}
+.heading p {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 7px;
+}
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  background: var(--background);
+  overflow-wrap: anywhere;
+}
+.title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--brand);
+}
+.title > span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--brand-border);
+  border-radius: 50%;
+  font-size: 12px;
+}
+.title h3 {
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+.description {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 12px 0 16px;
+}
+.prompt {
+  color: var(--foreground);
+  font-size: 13px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  margin-bottom: 22px;
+}
+.choice > button {
+  margin-top: auto;
+  align-self: flex-start;
+  white-space: normal;
+  text-align: left;
+  height: auto;
+  min-height: 38px;
+  font-size: 12px;
+}
+.choice > button > svg {
+  flex-shrink: 0;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 16px 0;
+  color: var(--brand);
+  font-size: 13px;
+  line-height: 1.7;
+}
+.status > svg {
+  flex-shrink: 0;
+}
+.error {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.error button {
+  margin-top: 12px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@container (max-width: 730px) {
+  .choices {
+    grid-template-columns: 1fr;
+  }
+  .choice {
+    padding: 16px;
+  }
+}

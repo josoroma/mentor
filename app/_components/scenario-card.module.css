@@ -1,0 +1,71 @@
+.card {
+  position: relative;
+}
+
+.open {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.open:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.meta {
+  padding-right: 32px;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.bookmark {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 7px;
+  color: var(--text-muted);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    color 160ms,
+    background 160ms,
+    transform 160ms;
+}
+
+.bookmark:hover {
+  color: #f43f5e;
+  background: color-mix(in srgb, #f43f5e 10%, transparent);
+}
+
+.bookmark:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.bookmark.saved {
+  color: #ef4444;
+}
+
+.bookmark:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.bookmark:active:not(:disabled) {
+  transform: scale(0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bookmark {
+    transition: none;
+  }
+}

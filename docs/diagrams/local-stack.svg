@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="840" viewBox="0 0 1000 840" role="img" aria-labelledby="title desc">
+  <title id="title">Mentor's local-first application stack</title>
+  <desc id="desc">The browser runs React, Jotai, Web Audio and on-demand Three.js in a Next.js application. Next.js route handlers validate contracts with Zod and call local models through the AI SDK. Loopback services provide a Gemma coach through llama.cpp or Bonsai through MTPLX, faster-whisper recognition, and macOS, Kokoro or Chatterbox speech. Practice saves to IndexedDB with localStorage recovery. Local Supabase PostgreSQL stores practice and Explore learning data with authenticated ownership. Hosted Supabase text synchronization is an explicit learner opt-in.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="m2 1 4 4-4 4" fill="none" stroke="#1447e6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; }
+    .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 1.8px; fill: #1447e6; }
+    .heading { font-size: 28px; font-weight: 700; letter-spacing: -.7px; fill: #171717; }
+    .label { font-size: 19px; font-weight: 700; letter-spacing: -.35px; fill: #171717; }
+    .body { font-size: 14px; fill: #666; }
+    .sub { font-size: 13px; font-weight: 700; fill: #333; }
+    .small { font-size: 12px; fill: #777; }
+    .card { fill: #fff; stroke: #e5e5e5; }
+    .connector { fill: none; stroke: #1447e6; stroke-width: 1.8; marker-end: url(#arrow); }
+  </style>
+  <rect x=".5" y=".5" width="999" height="839" rx="20" fill="#fff" stroke="#e5e5e5"/>
+  <text x="32" y="35" class="eyebrow">THE STACK</text>
+  <text x="32" y="75" class="heading">Local intelligence. Learning you can keep.</text>
+  <text x="32" y="102" class="body">Voice, generation, and learning data run on the learner's machine by default.</text>
+
+  <rect x="16" y="126" width="968" height="564" rx="15" fill="#fafafa" stroke="#d4d4d4"/>
+  <text x="36" y="152" class="eyebrow">ON YOUR MACHINE</text>
+  <rect x="774" y="137" width="190" height="25" rx="6" fill="#eef3ff"/>
+  <text x="869" y="154" text-anchor="middle" font-size="11" font-weight="700" fill="#1447e6">INFERENCE: LOOPBACK ONLY</text>
+
+  <rect x="36" y="180" width="292" height="286" rx="12" class="card"/>
+  <text x="56" y="213" class="label">Browser experience</text>
+  <text x="56" y="241" class="body">Next.js · React · TypeScript</text>
+  <line x1="56" y1="262" x2="308" y2="262" stroke="#ededed"/>
+  <text x="56" y="286" class="sub">Interface + state</text>
+  <text x="56" y="309" class="body">Tailwind · Radix · Jotai</text>
+  <text x="56" y="345" class="sub">Voice interaction</text>
+  <text x="56" y="368" class="body">Microphone · Web Audio · playback</text>
+  <text x="56" y="404" class="sub">Interactive learning</text>
+  <text x="56" y="427" class="body">SVG + on-demand Three.js</text>
+  <text x="56" y="447" class="small">Declarative lessons, rendered by the app</text>
+
+  <path d="M332 322h18" class="connector"/>
+  <rect x="356" y="180" width="288" height="286" rx="12" class="card"/>
+  <text x="376" y="213" class="label">Application API</text>
+  <text x="376" y="241" class="body">Next.js route handlers</text>
+  <line x1="376" y1="262" x2="624" y2="262" stroke="#ededed"/>
+  <text x="376" y="286" class="sub">Zod contracts</text>
+  <text x="376" y="309" class="body">Requests · model output · records</text>
+  <text x="376" y="345" class="sub">Vercel AI SDK</text>
+  <text x="376" y="368" class="body">Local coach streaming</text>
+  <text x="376" y="404" class="sub">Speech + learning routes</text>
+  <text x="376" y="427" class="body">Transcription · synthesis · Explore</text>
+  <text x="376" y="447" class="small">Cancellation and bounded requests</text>
+
+  <path d="M648 322h18" class="connector"/>
+  <rect x="672" y="180" width="292" height="286" rx="12" fill="#eef3ff" stroke="#cdd9fc"/>
+  <text x="692" y="213" class="label">Local model services</text>
+  <text x="692" y="241" class="body">127.0.0.1 / localhost</text>
+  <line x1="692" y1="262" x2="944" y2="262" stroke="#d5dffa"/>
+  <text x="692" y="286" class="sub">Language model</text>
+  <text x="692" y="309" class="body">Gemma · llama.cpp</text>
+  <text x="692" y="329" class="small">or Bonsai · MTPLX</text>
+  <text x="692" y="359" class="sub">Speech recognition</text>
+  <text x="692" y="382" class="body">faster-whisper</text>
+  <text x="692" y="412" class="sub">Speech synthesis</text>
+  <text x="692" y="435" class="body">macOS · Kokoro · Chatterbox</text>
+
+  <path d="M182 471v35" class="connector"/>
+  <path d="M500 471v35" class="connector"/>
+  <rect x="36" y="516" width="292" height="142" rx="12" class="card"/>
+  <text x="56" y="547" class="label">On-device recovery</text>
+  <text x="56" y="574" class="body">IndexedDB + localStorage</text>
+  <text x="56" y="601" class="small">Original / improved practice transcripts</text>
+  <text x="56" y="622" class="small">and session progress survive sync errors.</text>
+  <text x="56" y="643" font-size="11" fill="#1447e6">AUTOMATIC PRACTICE SAVES</text>
+
+  <rect x="356" y="516" width="608" height="142" rx="12" class="card"/>
+  <text x="376" y="547" class="label">Local Supabase · PostgreSQL in Docker</text>
+  <text x="376" y="574" class="body">Practice sync from the browser · Explore persistence through the API</text>
+  <text x="376" y="601" class="small">Profile, sessions, transcripts, feedback, saved scenarios, and Explore lessons.</text>
+  <text x="376" y="622" class="small">Explore includes conversations, revisions, and saved interaction state.</text>
+  <text x="376" y="643" font-size="11" fill="#1447e6">ANONYMOUS AUTHENTICATION + ROW LEVEL SECURITY</text>
+
+  <rect x="32" y="722" width="936" height="88" rx="12" fill="#faf8ff" stroke="#ddd1f4" stroke-dasharray="5 5"/>
+  <text x="52" y="750" font-size="11" font-weight="700" letter-spacing="1.2" fill="#7c3aed">OPTIONAL · OUTSIDE THE DEVICE</text>
+  <text x="52" y="781" font-size="18" font-weight="700" fill="#171717">Hosted Supabase</text>
+  <text x="254" y="781" font-size="14" fill="#666">Learning text sync requires learner opt-in. Raw recordings are not retained.</text>
+</svg>

@@ -1,0 +1,363 @@
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 1fr);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  background: linear-gradient(110deg, var(--card), var(--brand-soft));
+}
+.copy {
+  padding: 30px 12px 30px 30px;
+  min-width: 0;
+  z-index: 1;
+}
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  font-weight: 550;
+}
+.copy h2 {
+  font-size: clamp(23px, 2.2vw, 36px);
+  font-weight: 550;
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.roleContext {
+  margin: 17px 0 0;
+  color: var(--brand);
+  font-size: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.invitation {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.8;
+}
+.caption {
+  margin-top: 21px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: color-mix(in oklch, var(--card) 65%, transparent);
+}
+.caption > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--brand);
+  font-size: 8px;
+  letter-spacing: 1px;
+  flex-wrap: wrap;
+}
+.caption > span small {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 7px;
+}
+.transcript {
+  height: 180px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin-top: 12px;
+  padding-right: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.turn {
+  margin: 0 0 15px;
+  padding: 8px 10px;
+  border-left: 2px solid var(--brand-border);
+  border-radius: 0 6px 6px 0;
+}
+.turn strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--brand);
+  font-size: 10px;
+  font-weight: 550;
+}
+.turn strong span {
+  color: var(--text-muted);
+  font-size: 7px;
+  font-weight: 400;
+}
+.samTurn {
+  border-color: var(--user-border);
+}
+.samTurn strong {
+  color: var(--user-accent);
+}
+.activeTurn {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+}
+.samTurn.activeTurn {
+  background: var(--user-soft);
+  border-color: var(--user-accent);
+}
+.emptyTranscript {
+  color: var(--text-muted);
+  padding: 22px 0;
+}
+.caption p {
+  margin: 9px 0 0;
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.heard {
+  margin: 14px 0;
+  padding-left: 11px;
+  border-left: 2px solid var(--user-accent);
+}
+.heard span {
+  color: var(--user-accent);
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.heard p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+.controls > button {
+  font-size: 11px;
+}
+.note {
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 12px 0 0;
+}
+.error {
+  color: var(--destructive-text);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 12px;
+}
+.visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 14px;
+  min-width: 0;
+  background: radial-gradient(
+    ellipse at 50% 45%,
+    color-mix(in oklch, var(--brand) 14%, transparent),
+    transparent 70%
+  );
+}
+.visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.16;
+  pointer-events: none;
+  background-image: radial-gradient(var(--brand) 0.55px, transparent 0.55px);
+  background-size: 19px 19px;
+  mask-image: linear-gradient(180deg, black, transparent);
+}
+.orbLabel {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 7px;
+  letter-spacing: 1.4px;
+  color: var(--text-muted);
+  text-align: center;
+}
+.orbLabel > span {
+  width: 4px;
+  height: 4px;
+}
+.participants {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 340px;
+  gap: 4px;
+  margin: 15px 0 5px;
+}
+.participant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+.participant > :global(.orb-scene) {
+  width: 125px;
+  height: 150px;
+  transform: scale(0.75);
+}
+.participant > strong {
+  color: var(--foreground);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+.participant > span {
+  color: var(--brand);
+  font-size: 7px;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+.samParticipant > span {
+  color: var(--user-accent);
+}
+.participant > :global(.waveform) {
+  width: 100px;
+  height: 25px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 35px;
+  max-width: 230px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.state svg {
+  flex-shrink: 0;
+}
+.userWave {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  padding: 5px 10px;
+  margin-top: 15px;
+  border: 1px solid var(--brand-border);
+  border-radius: 6px;
+  background: var(--brand-soft);
+  color: var(--user-accent);
+  min-height: 44px;
+  cursor: pointer;
+}
+.userWave[aria-pressed='false'] {
+  color: var(--text-secondary);
+}
+.userWave[aria-pressed='true'] {
+  border-color: var(--user-accent);
+  background: var(--user-soft);
+}
+.userWave:focus-visible {
+  outline: 2px solid var(--user-accent);
+  outline-offset: 4px;
+}
+.userWave:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.learnerTurn {
+  border-color: var(--foreground);
+  background: var(--user-soft);
+}
+.learnerTurn strong {
+  color: var(--foreground);
+}
+.improvement {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid var(--border);
+}
+.improvement > span {
+  font-size: 8px;
+  color: var(--brand);
+  letter-spacing: 0.08em;
+}
+.improvement p {
+  margin-top: 4px;
+}
+.saveStatus {
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.saveStatus button {
+  color: var(--brand);
+  text-decoration: underline;
+}
+.userWave > span {
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+.userWave > :global(.waveform) {
+  width: 125px;
+  height: 25px;
+}
+.send {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 10px;
+  margin-top: 14px;
+}
+.send:hover {
+  color: var(--brand);
+}
+.privacy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 9px;
+  margin-top: 19px;
+}
+@media (max-width: 1250px) and (min-width: 901px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .visual {
+    padding-top: 8px;
+  }
+  .copy {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .copy {
+    padding: 24px 22px 12px;
+  }
+  .copy h2 {
+    font-size: 27px;
+  }
+  .visual {
+    padding-top: 13px;
+  }
+  .participants {
+    max-width: 310px;
+  }
+  .transcript {
+    height: 155px;
+  }
+}

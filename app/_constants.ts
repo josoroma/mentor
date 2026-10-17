@@ -1,0 +1,279 @@
+import type { Profile, Scenario } from '@/app/_types'
+import { professionalRoles } from '@/lib/learning/path-catalog'
+
+export const roles = professionalRoles
+
+const allRoleIds = roles.map(({ id }) => id)
+
+export const scenarios: Scenario[] = [
+  {
+    id: 'daily-standup',
+    title: 'The daily standup',
+    description: 'Share your progress, explain a blocker, and set a clear plan for the day.',
+    category: 'Daily communication',
+    difficulty: 'Beginner',
+    minutes: 5,
+    roleIds: allRoleIds,
+    persona: { name: 'Alex', role: 'Your engineering lead' },
+    brief:
+      'You are in your morning standup. Yesterday you made progress on a feature, but a dependency is holding up the final step. Give your team a concise update and make a specific request for help.',
+    objectives: [
+      'Summarize yesterday’s progress',
+      'Explain a blocker with useful context',
+      'State your next step and ask for help',
+    ],
+    openingLine:
+      'Morning! Let’s start with your update. What did you work on yesterday, and what’s the plan for today?',
+    icon: 'sun',
+    accent: 'violet',
+  },
+  {
+    id: 'progress-update',
+    title: 'A progress check-in',
+    description: 'Keep your team in the loop with a confident, focused project update.',
+    category: 'Daily communication',
+    difficulty: 'Beginner',
+    minutes: 5,
+    roleIds: allRoleIds,
+    persona: { name: 'Sam', role: 'Your project manager' },
+    brief:
+      'A teammate asks whether your implementation will be ready this week. Some parts are complete, but testing revealed extra work. Give an honest update and agree on the next checkpoint.',
+    objectives: [
+      'Separate completed work from remaining work',
+      'Explain uncertainty without overpromising',
+      'Agree on a realistic next checkpoint',
+    ],
+    openingLine:
+      'Hey, how’s the implementation coming along? Are we still on track for the end of the week?',
+    icon: 'chart',
+    accent: 'blue',
+  },
+  {
+    id: 'technical-decisions',
+    title: 'Explain your approach',
+    description: 'Walk a colleague through a technical decision and its trade-offs.',
+    category: 'Technical discussions',
+    difficulty: 'Intermediate',
+    minutes: 8,
+    roleIds: allRoleIds,
+    persona: { name: 'Jordan', role: 'A senior engineer' },
+    brief:
+      'Your team is reviewing your proposed implementation. Explain the problem, the approach you chose, and an alternative you considered. Be ready for questions about cost, latency, reliability, or maintenance.',
+    objectives: [
+      'State the problem before the solution',
+      'Compare alternatives and trade-offs',
+      'Respond thoughtfully to a challenge',
+    ],
+    openingLine:
+      'I had a look at your proposal. Can you walk me through why you chose this approach?',
+    icon: 'workflow',
+    accent: 'amber',
+  },
+  {
+    id: 'code-review',
+    title: 'Request a code review',
+    description: 'Give your reviewer the context they need and discuss their feedback.',
+    category: 'Collaboration',
+    difficulty: 'Beginner',
+    minutes: 6,
+    roleIds: allRoleIds,
+    persona: { name: 'Taylor', role: 'Your code reviewer' },
+    brief:
+      'You have a pull request ready. Ask a busy teammate to review it, explain the important changes, and identify one area where you especially want feedback. Respond constructively if they question the design.',
+    objectives: [
+      'Make a clear and considerate request',
+      'Summarize the scope of the change',
+      'Ask for specific feedback and clarify comments',
+    ],
+    openingLine:
+      'I have a little time before my next meeting. What should I know about your pull request?',
+    icon: 'git-pull-request',
+    accent: 'green',
+  },
+  {
+    id: 'bug-triage',
+    title: 'Talk through a bug',
+    description: 'Explain what broke, what you know, and how you plan to fix it.',
+    category: 'Technical discussions',
+    difficulty: 'Intermediate',
+    minutes: 8,
+    roleIds: allRoleIds,
+    persona: { name: 'Morgan', role: 'Your on-call teammate' },
+    brief:
+      'An intermittent production issue affects some users. You have observations but have not confirmed the root cause. Help your teammate understand the impact, the evidence, and your next diagnostic step.',
+    objectives: [
+      'Describe expected versus actual behavior',
+      'Distinguish evidence from a hypothesis',
+      'Agree on a safe next step and ownership',
+    ],
+    openingLine:
+      'I saw the bug report. What are users experiencing, and what have you found so far?',
+    icon: 'bug',
+    accent: 'rose',
+  },
+  {
+    id: 'asking-for-guidance',
+    title: 'Ask for guidance',
+    description: 'Get unstuck by asking a focused question with the right context.',
+    category: 'Collaboration',
+    difficulty: 'Beginner',
+    minutes: 5,
+    roleIds: allRoleIds,
+    persona: { name: 'Casey', role: 'Your mentor' },
+    brief:
+      'You are working in an unfamiliar part of the codebase. You have tried two approaches, and neither has worked. Explain your goal, what you tried, and the specific decision you need help with.',
+    objectives: [
+      'Explain the goal and relevant context',
+      'Describe what you have already tried',
+      'Ask a specific question and confirm understanding',
+    ],
+    openingLine:
+      'Of course, happy to help. What are you trying to do, and where are you getting stuck?',
+    icon: 'compass',
+    accent: 'blue',
+  },
+  {
+    id: 'technical-discussion',
+    title: 'Join the technical debate',
+    description: 'Contribute an idea, ask better questions, and build on other viewpoints.',
+    category: 'Technical discussions',
+    difficulty: 'Advanced',
+    minutes: 10,
+    roleIds: allRoleIds,
+    persona: { name: 'Alex', role: 'A staff engineer' },
+    brief:
+      'Your team is debating whether to add complexity now for future scale or ship a smaller solution first. Explain your view, ask about assumptions, and help the group reach a practical decision.',
+    objectives: [
+      'Offer a reasoned opinion without dominating',
+      'Ask questions that test assumptions',
+      'Summarize common ground and a decision',
+    ],
+    openingLine:
+      'We have two reasonable options here. Should we build for scale now, or start with something smaller? What do you think?',
+    icon: 'messages',
+    accent: 'violet',
+  },
+  {
+    id: 'product-demo',
+    title: 'Lead a product demo',
+    description: 'Show what you built and make its value clear to a nontechnical audience.',
+    category: 'Presentations',
+    difficulty: 'Intermediate',
+    minutes: 10,
+    roleIds: allRoleIds,
+    persona: { name: 'Jamie', role: 'A product stakeholder' },
+    brief:
+      'You are presenting a recently implemented feature to a stakeholder. Start with the user problem, guide them through the experience, and explain the value. Acknowledge a current limitation and handle follow-up questions.',
+    objectives: [
+      'Connect the feature to a user problem',
+      'Guide the audience with clear signposting',
+      'Answer questions and acknowledge limitations',
+    ],
+    openingLine:
+      'Thanks for making time for this demo. Before we jump in, what problem does this feature solve for our users?',
+    icon: 'presentation',
+    accent: 'amber',
+  },
+  {
+    id: 'implementation-walkthrough',
+    title: 'Present your implementation',
+    description: 'Make a complex implementation easy for your teammates to follow.',
+    category: 'Presentations',
+    difficulty: 'Advanced',
+    minutes: 12,
+    roleIds: allRoleIds,
+    persona: { name: 'Riley', role: 'A teammate joining the project' },
+    brief:
+      'A teammate will help maintain the feature you built. Give a structured walkthrough of the architecture, key data flow, and one important failure mode. Check their understanding before moving into details.',
+    objectives: [
+      'Present the big picture before details',
+      'Explain a data flow in a logical sequence',
+      'Check understanding and cover failure handling',
+    ],
+    openingLine:
+      'I’m getting up to speed on this feature. Could you start with the big picture of how it works?',
+    icon: 'layers',
+    accent: 'green',
+  },
+  {
+    id: 'stakeholder-update',
+    title: 'Align with stakeholders',
+    description: 'Translate technical progress into impact, risks, and clear next steps.',
+    category: 'Daily communication',
+    difficulty: 'Intermediate',
+    minutes: 8,
+    roleIds: allRoleIds,
+    persona: { name: 'Drew', role: 'Your business stakeholder' },
+    brief:
+      'A stakeholder expects a launch next week, but a reliability concern needs more testing. Explain the business impact, offer options, and make a recommendation with a clear next update.',
+    objectives: [
+      'Use accessible language without losing accuracy',
+      'Communicate a risk and practical options',
+      'Confirm priorities and next steps',
+    ],
+    openingLine:
+      'We’re planning the launch announcement. Is there anything that could affect next week’s release?',
+    icon: 'target',
+    accent: 'rose',
+  },
+  {
+    id: 'client-discovery',
+    title: 'Understand a client’s needs',
+    description: 'Uncover the real problem and confirm what success would look like.',
+    category: 'Collaboration',
+    difficulty: 'Intermediate',
+    minutes: 10,
+    roleIds: allRoleIds,
+    persona: { name: 'Cameron', role: 'A prospective client' },
+    brief:
+      'A client asks for a new capability but has only described a broad idea. Ask about their workflow, constraints, and success criteria. Summarize the need before proposing a technical direction.',
+    objectives: [
+      'Ask open and specific follow-up questions',
+      'Clarify constraints without making assumptions',
+      'Summarize the client’s need in their language',
+    ],
+    openingLine:
+      'We’d like to automate more of our workflow, but we’re not sure where to start. Can you help us think it through?',
+    icon: 'handshake',
+    accent: 'blue',
+  },
+  {
+    id: 'constructive-disagreement',
+    title: 'Navigate a disagreement',
+    description: 'Push back respectfully and help the team find a workable solution.',
+    category: 'Collaboration',
+    difficulty: 'Advanced',
+    minutes: 8,
+    roleIds: allRoleIds,
+    persona: { name: 'Quinn', role: 'A teammate with a different view' },
+    brief:
+      'A teammate wants to skip a validation step to meet a deadline. You think that creates a risk. Understand their concern, explain yours calmly, and suggest a compromise that protects the release.',
+    objectives: [
+      'Acknowledge the other person’s priorities',
+      'Disagree with reasons and respectful language',
+      'Propose a practical compromise',
+    ],
+    openingLine:
+      'I think we should skip this extra validation and ship today. We can always fix things later. Are you on board?',
+    icon: 'scale',
+    accent: 'violet',
+  },
+]
+
+export const defaultProfile: Profile = {
+  name: '',
+  roleId: 'deployed-ai-developer',
+  level: 'B2',
+  dailyGoalMinutes: 15,
+  localOnly: true,
+}
+
+export const scenarioCategories = [
+  'All scenarios',
+  'Daily communication',
+  'Technical discussions',
+  'Presentations',
+  'Collaboration',
+] as const
+export const ROLES = roles
+export const SCENARIOS = scenarios
